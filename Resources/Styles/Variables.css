@@ -1,0 +1,24 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-black-10: #101010;
+    --color-black-20: #202020;
+
+    --color-gray-10: #e2e2e2;
+    --color-gray-20: #979797;
+
+    --main-color: #ef7f1a;
+    --second-color: #fdf900;
+    --third-color: #f0f0f0;
+
+    /* altcolors */
+
+    --color-alt-1: #DE602C;
+    --color-alt-2: #DE9B2C;
+    --color-alt-3: #DE7F2C;
+    --color-alt-4: #DE412C;
+    --color-alt-5: #DEB12C;
+
+
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

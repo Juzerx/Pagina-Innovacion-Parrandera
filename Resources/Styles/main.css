@@ -1,0 +1,116 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+    border-radius: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+    border-radius: 10px;
+}
+.presentation {
+    /* background-color: var(--color-gray-10); */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.presentation_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+.welcome {
+    text-align: center;
+    flex-grow: 1;
+    margin: 20px;
+    background-color: var(--color-gray-10);
+}
+.welcome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background-color: var(--color-alt-2);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+.welcome h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.demostration {
+    text-align: center;
+    background-color: var(--color-gray-10);
+
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    flex-grow: 1;
+}
+.introduction_container {
+    margin: 0;
+}
+.introduction {
+    display: flex;
+    min-height: fit-content;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--color-gray-10);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.img_introduction {
+    flex: 1;
+    margin: 20px;
+    background-image: url(../imgs/fondo\ azul\ y\ rojo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.text_introduction {
+    flex: 1;
+    margin: 20px;
+    background-color: var(--color-gray-10);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    height: 100%;
+}
+.img_introduction, .text_introduction {
+    width: calc(100% - 40px);
+    border-radius: 10px;
+}
