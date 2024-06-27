@@ -17,3 +17,26 @@ nav a:hover{
     background-color: var(--color-white);
     color: var(--main-color);
 }
+aside {
+    display:none;
+}
+.ri-side-bar-line {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    nav a{
+        display: none;
+    }
+    nav {
+        height: 1.7rem;
+    }
+    
+.ri-side-bar-line {
+    display: block;
+    color: var(--color-white);
+    cursor: pointer;
+    text-align: right;
+    float: right;
+    margin: 3px;
+}
+}

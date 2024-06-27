@@ -1,4 +1,6 @@
 let currentSlide = 0;
+let autoSlideInterval = setInterval(nextSlide, 3000);
+let autoSlideTimeout;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
@@ -21,7 +23,22 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-// Auto slide (optional)
-setInterval(() => {
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    clearTimeout(autoSlideTimeout);
+    autoSlideTimeout = setTimeout(() => {
+        autoSlideInterval = setInterval(nextSlide, 3000);
+    }, 5000);
+}
+
+document.querySelector('.next').addEventListener('click', () => {
     nextSlide();
-}, 3000);
+    resetAutoSlide();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    prevSlide();
+    resetAutoSlide();
+});
+
+
