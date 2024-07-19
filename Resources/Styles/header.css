@@ -24,11 +24,11 @@ aside {
     display: none;
 }
 @media only screen and (max-width: 768px) {
-    nav a{
+    nav {
         display: none;
     }
     nav {
-        height: 1.7rem;
+        height: .1rem;
     }
     
 .ri-side-bar-line {
@@ -37,6 +37,6 @@ aside {
     cursor: pointer;
     text-align: right;
     float: right;
-    margin: 3px;
+    margin: 2%;
 }
 }

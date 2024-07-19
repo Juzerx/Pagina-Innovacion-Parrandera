@@ -2,6 +2,7 @@ footer {
     background-color: var(--main-color);
 }
 .footer {
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: max-content;
@@ -11,17 +12,34 @@ footer {
     padding: .25rem 0;
     text-align: center;
 }
-.footer h4{
+.footer_initial {
+    bottom: 0;
+    width: 100%;
+    height: max-content;
+    background-color: var(--main-color);
+    align-items: center;
+    z-index: 1;
+    padding: .25rem 0;
+    text-align: center;
+}
+.footer h4,.footer_initial h4{
     color: var(--color-white);
     padding: .9rem 1rem;
     display: inline-block;
 }
-.footer a{
+.footer a,.footer_initial a{
     color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     padding: .9rem 1rem;
 }
-.footer a:hover{
+.footer a:hover,.footer_initial a:hover{
     color: var(--color-alt-4);
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: block;
+        bottom: auto;
+    }
 }
